@@ -85,6 +85,97 @@
             }
         }
     });
+
+    // Contact Form Handler (Formspree)
+    $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+
+        // Show loading state
+        $('#submitBtn').prop('disabled', true);
+        $('#btnText').hide();
+        $('#btnSpinner').show();
+
+        // Get form data
+        var formData = new FormData(this);
+
+        // Send to Formspree
+        fetch('https://formspree.io/f/YOUR_FORM_ID', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Hide loading state
+            $('#submitBtn').prop('disabled', false);
+            $('#btnText').show();
+            $('#btnSpinner').hide();
+
+            if (data.ok) {
+                // Success
+                $('#formMessage').removeClass('alert-danger').addClass('alert alert-success').html('Thank you for your message. We will get back to you soon!').show();
+                $('#contactForm')[0].reset();
+            } else {
+                // Error
+                $('#formMessage').removeClass('alert-success').addClass('alert alert-danger').html('Sorry, there was an error sending your message. Please try again later.').show();
+            }
+        })
+        .catch(error => {
+            // Hide loading state
+            $('#submitBtn').prop('disabled', false);
+            $('#btnText').show();
+            $('#btnSpinner').hide();
+
+            // Show error message
+            $('#formMessage').removeClass('alert-success').addClass('alert alert-danger').html('Sorry, there was an error sending your message. Please try again later.').show();
+        });
+    });
+
+    // Lazy Loading for Images (Performance Optimization)
+    function lazyLoadImages() {
+        const images = document.querySelectorAll('img[data-src]');
+        
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.dataset.src;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            });
+        });
+        
+        images.forEach(img => imageObserver.observe(img));
+    }
     
+    // Initialize lazy loading when DOM is ready
+    $(document).ready(function() {
+        lazyLoadImages();
+    });
+
+    // Pricing Toggle Functionality
+    $(document).ready(function() {
+        $('.pricing-toggle').on('click', function() {
+            var plan = $(this).data('plan');
+            
+            // Update active button
+            $('.pricing-toggle').removeClass('btn-primary').addClass('btn-outline-primary');
+            $(this).removeClass('btn-outline-primary').addClass('btn-primary');
+            
+            // Hide all pricing sections
+            $('.pricing-section').fadeOut(300, function() {
+                $(this).css('display', 'none');
+            });
+            
+            // Show selected pricing section
+            setTimeout(function() {
+                $('#pricing-' + plan).fadeIn(300).css('display', 'block');
+            }, 300);
+        });
+    });
+
 })(jQuery);
 
