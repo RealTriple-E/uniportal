@@ -177,5 +177,67 @@
         });
     });
 
+    // FAQ Filtering and Search Functionality
+    $(document).ready(function() {
+        var $faqItems = $('.faq-item');
+        var $filterButtons = $('.faq-filter');
+        var $searchInput = $('#faqSearch');
+        var currentCategory = 'all';
+
+        // Category Filter
+        $filterButtons.on('click', function() {
+            currentCategory = $(this).data('category');
+            
+            // Update active button
+            $filterButtons.removeClass('btn-primary').addClass('btn-outline-primary');
+            $(this).removeClass('btn-outline-primary').addClass('btn-primary');
+            
+            // Filter FAQs
+            filterFAQs();
+        });
+
+        // Search Functionality
+        $searchInput.on('keyup', function() {
+            filterFAQs();
+        });
+
+        function filterFAQs() {
+            var searchTerm = $searchInput.val().toLowerCase();
+            var visibleCount = 0;
+
+            $faqItems.each(function() {
+                var $item = $(this);
+                var itemCategory = $item.data('category');
+                var itemText = $item.text().toLowerCase();
+                
+                // Check category match
+                var categoryMatch = (currentCategory === 'all' || itemCategory === currentCategory);
+                
+                // Check search term match
+                var searchMatch = (searchTerm === '' || itemText.includes(searchTerm));
+                
+                // Show or hide based on both filters
+                if (categoryMatch && searchMatch) {
+                    $item.fadeIn(200);
+                    visibleCount++;
+                } else {
+                    $item.fadeOut(200);
+                }
+            });
+
+            // Show "no results" message if needed
+            if (visibleCount === 0) {
+                if ($('#faqNoResults').length === 0) {
+                    $('#faqAccordion').after('<div id="faqNoResults" class="alert alert-info mt-4">No FAQs found matching your search. <a href="#contact">Contact us</a> for help.</div>');
+                }
+                $('#faqNoResults').fadeIn();
+            } else {
+                $('#faqNoResults').fadeOut(function() {
+                    $(this).remove();
+                });
+            }
+        }
+    });
+
 })(jQuery);
 

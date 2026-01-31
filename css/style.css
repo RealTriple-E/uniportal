@@ -553,3 +553,115 @@ img[data-src].loaded {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/*** FAQ Section ***/
+#faqSearch {
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#faqSearch:focus {
+    box-shadow: 0 4px 16px rgba(74, 196, 243, 0.2);
+    outline: none;
+    border-color: var(--primary) !important;
+}
+
+.faq-filter {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.faq-filter:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-filter.btn-primary {
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(74, 196, 243, 0.3);
+}
+
+.accordion-item {
+    border: 1px solid #e9ecef;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button {
+    padding: 20px;
+    font-weight: 600;
+    color: #202942;
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(74, 196, 243, 0.25);
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+    padding: 20px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.faq-item {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#faqNoResults {
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+#faqNoResults a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#faqNoResults a:hover {
+    text-decoration: underline;
+}
