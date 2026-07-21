@@ -1,1108 +1,1099 @@
-<DOCUMENT filename="index.html">
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>UniPortal - School Management & HR Payroll Software in Zambia</title>
+    <title>UniPortal - Smart School Management & Payroll Software in Zambia</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords" content="school management system Zambia, university portal Zambia, HR payroll software Zambia, education management software Lusaka, automated payroll NAPSA ZRA, student portal mobile money">
-    <meta name="description" content="Streamline your Zambian school or university with UniPortal's cloud-based management system. Automate payroll, track student performance, and integrate mobile money payments. Choose from Basic, Standard, or Pro tiers starting at K499/month. Contact us for a demo!">
+    <meta name="description" content="Streamline your Zambian school or university with UniPortal's cloud-based management system. Automate payroll, track student performance, and integrate mobile money payments. Plans from K499/month.">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Spinner -->
+    <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center" style="background: var(--canvas);">
+        <div class="spinner-grow" style="width: 3rem; height: 3rem; color: var(--primary);" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
+    </div>
 
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0" id="home">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">UniPortal</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+    <!-- Navbar -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="#home" class="navbar-brand-custom">
+                    <div class="brand-icon">U</div>
+                    <span class="brand-name text-white">UniPortal</span>
                 </a>
-                <button class="navbar-toggler rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+                <div class="d-none d-lg-flex align-items-center gap-1" id="navLinks">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#partners" class="nav-link">Partners</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20would%20like%20to%20request%20a%20free%20demo." class="btn btn-primary btn-sm" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Get Demo
+                    </a>
+                </div>
+
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#products" class="nav-item nav-link">Products</a>
-                        <a href="#features" class="nav-item nav-link">Features</a>
-                        <a href="#pricing" class="nav-item nav-link">Pricing</a>
-                        <a href="#partners" class="nav-item nav-link">Partners</a>
-                        <a href="#resources" class="nav-item nav-link">Resources</a>
-                        <a href="#testimonial" class="nav-item nav-link">Testimonials</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a href="#contact" class="btn btn-light rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Demo</a>
-                </div>
-            </nav>
-
-            <div class="container-xxl bg-primary hero-header">
-                <div class="container">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated slideInDown">Empower your enterprise & Automate every aspect of your Business.</h1>
-                            <p class="text-white pb-4 animated slideInDown">Transform your operations with UniPortal – a comprehensive cloud-based solution offering integrated HR automation, payroll, and education management for clinics, retail stores, and education, starting at K499/month. Handle enrollments and manage students and hospital records seamlessly, backed by ethical innovation and excellence. Enjoy the benefits of mobile money integration with Bank, MTN, Airtel, and Zamtel, while automating NAPSA/ZRA reports to empower students, parents, and staff.</p>
-                            <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
-                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20would%20like%20to%20request%20a%20free%20demo%20of%20your%20school%20management%20system." class="btn btn-light btn-lg rounded-pill py-3 px-5 animated slideInDown" target="_blank">
-                                    <i class="fab fa-whatsapp me-2"></i>Get Free Demo Today
-                                </a>
-                                <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill py-3 px-5 animated slideInDown">
-                                    <i class="fa fa-envelope me-2"></i>Request Quote
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <img class="img-fluid rounded animated zoomIn" src="img/Dashboard-Design.jpg" alt="UniPortal Dashboard Overview">
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-        <!-- Navbar & Hero End -->
 
-
-        <!-- Feature Start -->
-        <div class="container-xxl py-6">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="feature-item bg-light rounded text-center p-5">
-                            <i class="fa fa-4x fa-graduation-cap text-primary mb-4"></i>
-                            <h5 class="mb-3">Education Management</h5>
-                            <p class="m-0">Streamline student registration, grades, attendance, and parent portals for Zambian schools and universities.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="feature-item bg-light rounded text-center p-5">
-                            <i class="fa fa-4x fa-money-check-alt text-primary mb-4"></i>
-                            <h5 class="mb-3">Payroll Automation</h5>
-                            <p class="m-0">Automate salary calculations, NAPSA/NHIMA/ZRA reports, and WhatsApp payslips for efficient HR management.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="feature-item bg-light rounded text-center p-5">
-                            <i class="fa fa-4x fa-mobile-alt text-primary mb-4"></i>
-                            <h5 class="mb-3">Mobile Money Integration</h5>
-                            <p class="m-0">Seamless payments via MTN, Airtel, Zamtel for fees and salaries, with secure cloud hosting.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feature End -->
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-6" id="about">
-            <div class="container">
-                <div class="row g-5 flex-column-reverse flex-lg-row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Enhance Your Institution's Efficiency with UniPortal</h1>
-                        <p class="mb-4">UniPortal provides comprehensive cloud-based solutions for Zambian schools, universities, and businesses. From student management and parent portals to automated payroll and statutory compliance, we help streamline operations while ensuring data security and regulatory adherence.</p>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h5>Cloud-Based Security</h5>
-                                <p class="mb-0">AES-256 encryption and daily backups for all data.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h5>24/7 Support (Pro Tier)</h5>
-                                <p class="mb-0">Dedicated account managers and emergency access for seamless operations.</p>
-                            </div>
-                        </div>
-                        <a href="#contact" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">Learn More</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid rounded wow zoomIn" data-wow-delay="0.5s" src="img/Screenshot_From_2026-01-31_03-13-51-removebg-preview.png" alt="UniPortal Team Collaborating">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Products Start (Renamed from Overview) -->
-        <div class="container-xxl bg-light my-6 py-5" id="products">
-            <div class="container">
-                <div class="row g-5 py-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="img/973_removebg.png" alt="UniPortal Combo Overview">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">01</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">UniPortal Combo</h5>
-                        </div>
-                        <p class="mb-4">Complete system for students, staff, and salaries. Includes education management and payroll automation.</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Up to unlimited employees (Pro)</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>NAPSA/ZRA reports</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>Student and parent portals</p>
-                    </div>
-                </div>
-                <div class="row g-5 py-5 align-items-center flex-column-reverse flex-lg-row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">02</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">UniPortal Education Management</h5>
-                        </div>
-                        <p class="mb-4">Standalone system for academic and finance management without payroll.</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Student registration and grades</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Fee tracking and reports</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>Enhanced portals for parents/students</p>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="img/overview-2.jpg" alt="UniPortal Education Management">
-                    </div>
-                </div>
-                <div class="row g-5 py-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="img/overview-3.jpg" alt="UniPortal Payroll">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-4">
-                            <h1 class="mb-0">03</h1>
-                            <span class="bg-primary mx-2" style="width: 30px; height: 2px;"></span>
-                            <h5 class="mb-0">UniPortal Payroll</h5>
-                        </div>
-                        <p class="mb-4">Standalone payroll tool for businesses and institutions.</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Automatic payslips and statutory files</p>
-                        <p><i class="fa fa-check-circle text-primary me-3"></i>Leave management</p>
-                        <p class="mb-0"><i class="fa fa-check-circle text-primary me-3"></i>WhatsApp self-service portal</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Products End -->
-
-
-        <!-- Advanced Feature Start -->
-        <div class="container-xxl py-6" id="features">
-            <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Key Features</h1>
-                    <p class="mb-5">UniPortal offers robust tools tailored for Zambian institutions, ensuring compliance, efficiency, and accessibility.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="advanced-feature-item text-center rounded py-5 px-4">
-                            <i class="fa fa-edit fa-3x text-primary mb-4"></i>
-                            <h5 class="mb-3">Student & Academic Management</h5>
-                            <p class="m-0">Registration, scheduling, grades, and report cards.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="advanced-feature-item text-center rounded py-5 px-4">
-                            <i class="fa fa-sync fa-3x text-primary mb-4"></i>
-                            <h5 class="mb-3">Statutory Compliance</h5>
-                            <p class="m-0">Auto-generate NAPSA, NHIMA, ZRA files.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="advanced-feature-item text-center rounded py-5 px-4">
-                            <i class="fa fa-laptop fa-3x text-primary mb-4"></i>
-                            <h5 class="mb-3">Portals & Access</h5>
-                            <p class="m-0">Student, parent, employee self-service portals.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="advanced-feature-item text-center rounded py-5 px-4">
-                            <i class="fa fa-draw-polygon fa-3x text-primary mb-4"></i>
-                            <h5 class="mb-3">Analytics & Reports</h5>
-                            <p class="m-0">Performance insights, financial analytics, custom reports.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Advanced Feature End -->
-
-        <!-- CTA Section After Features -->
-        <div class="container-xxl py-6 bg-primary">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-8 text-center text-lg-start">
-                        <h2 class="text-white mb-3">Ready to Transform Your Institution?</h2>
-                        <p class="text-white mb-4">Join hundreds of Zambian schools and businesses already using UniPortal to streamline operations and boost efficiency.</p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20would%20like%20to%20schedule%20a%20free%20demo%20for%20my%20institution." class="btn btn-light btn-lg rounded-pill py-3 px-5" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i>Schedule Free Demo
+            <div class="collapse d-lg-none" id="mobileNav">
+                <div class="mt-3 pb-2">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#partners" class="nav-link">Partners</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="mobile-cta mt-3">
+                        <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20would%20like%20to%20request%20a%20free%20demo." class="btn btn-primary btn-sm w-100" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Get Free Demo
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- CTA Section End -->
+    </nav>
 
-        <!-- Implementation Process Start -->
-        <div class="container-xxl py-6">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <img class="img-fluid rounded" src="img/process.jpg" alt="UniPortal Implementation">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Trusted by 50+ institutions across Zambia
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <h1 class="mb-4">Simple Steps to Implement UniPortal</h1>
-                        <p class="mb-4">Our implementation process ensures quick setup and training for your team.</p>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h5>System Configuration & Data Migration</h5>
-                                <p class="mb-0">Tailor to your structure and migrate existing records.</p>
+                    <h1 class="hero-title">
+                        Smart School Management <span class="gradient-text">& Payroll Automation</span>
+                    </h1>
+                    <p class="hero-description">
+                        UniPortal streamlines student management, payroll processing, and statutory compliance for Zambian schools and universities. Integrate mobile money payments and empower parents, students, and staff with real-time access.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20would%20like%20to%20request%20a%20free%20demo%20of%20your%20school%20management%20system." class="btn btn-primary btn-lg" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Get Free Demo
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg">
+                            <i class="fa fa-play-circle"></i> Learn More
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-label">Schools Served</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-number" data-count="5000">0</div>
+                            <div class="stat-label">Students Managed</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-number" data-count="99">0</div>
+                            <div class="stat-label">Uptime %</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <img class="img-fluid" src="img/hero-dashboard.jpg" alt="UniPortal Dashboard - School Management Software">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Strip -->
+    <section class="py-section" style="margin-top: -3rem; position: relative; z-index: 3;">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="row g-4">
+                <div class="col-lg-4 reveal stagger-1">
+                    <div class="feature-strip-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <h5>Education Management</h5>
+                        <p>Student registration, grades, attendance, class scheduling, and report cards for Zambian schools and universities.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal stagger-2">
+                    <div class="feature-strip-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-money-check-alt"></i>
+                        </div>
+                        <h5>Payroll Automation</h5>
+                        <p>Automatic salary calculations, NAPSA/NHIMA/ZRA reports, payslip delivery via WhatsApp, and leave management.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal stagger-3">
+                    <div class="feature-strip-item">
+                        <div class="feature-icon">
+                            <i class="fa fa-mobile-alt"></i>
+                        </div>
+                        <h5>Mobile Money Integration</h5>
+                        <p>Seamless fee collection and salary payments via MTN, Airtel, Zamtel, and direct bank transfers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-section section-light" id="about">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 reveal-left">
+                    <div class="about-content">
+                        <h1>Enhance Your Institution's <span class="gradient-text">Efficiency</span> with UniPortal</h1>
+                        <p>UniPortal provides comprehensive cloud-based solutions for Zambian schools, universities, and businesses. From student management and parent portals to automated payroll and statutory compliance, we streamline operations while ensuring data security.</p>
+                        <div class="about-check">
+                            <div class="check-icon"><i class="fa fa-check"></i></div>
+                            <div>
+                                <h5>Cloud-Based Security</h5>
+                                <p>AES-256 encryption and daily backups for complete data protection.</p>
                             </div>
                         </div>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-check"></i>
-                            </div>
-                            <div class="ms-4">
-                                <h5>Integration & Testing</h5>
-                                <p class="mb-0">Connect mobile money, WhatsApp, and test thoroughly.</p>
+                        <div class="about-check">
+                            <div class="check-icon"><i class="fa fa-check"></i></div>
+                            <div>
+                                <h5>24/7 Priority Support</h5>
+                                <p>Dedicated account managers and emergency access for seamless operations.</p>
                             </div>
                         </div>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-check"></i>
+                        <div class="about-check">
+                            <div class="check-icon"><i class="fa fa-check"></i></div>
+                            <div>
+                                <h5>Regulatory Compliance</h5>
+                                <p>Automated NAPSA, NHIMA, and ZRA statutory file generation.</p>
                             </div>
-                            <div class="ms-4">
-                                <h5>Training & Go-Live</h5>
-                                <p class="mb-0">Provide tier-based training and launch with support.</p>
+                        </div>
+                        <a href="#contact" class="btn btn-primary mt-3">Get Started Today</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-right">
+                    <div class="about-image">
+                        <img class="img-fluid" src="img/about-students.jpg" alt="African students using UniPortal school management system">
+                        <div class="floating-badge">
+                            <div class="badge-number">3</div>
+                            <div class="badge-text">Products Available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-section section-dark" id="products">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h1 class="mb-3">Our Products</h1>
+                <p class="section-subtitle mx-auto">Choose from three comprehensive solutions designed specifically for Zambian educational institutions and businesses.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 reveal stagger-1">
+                    <div class="product-card">
+                        <div class="product-number">01</div>
+                        <img src="img/product-combo.jpg" alt="UniPortal Combo - Complete School Management">
+                        <div class="product-body">
+                            <h5>UniPortal Combo</h5>
+                            <p>Complete integrated system for managing students, staff, academics, finances, and salaries in one platform.</p>
+                            <ul class="product-features">
+                                <li><i class="fa fa-check-circle"></i> Up to unlimited employees (Pro)</li>
+                                <li><i class="fa fa-check-circle"></i> NAPSA/ZRA automated reports</li>
+                                <li><i class="fa fa-check-circle"></i> Student and parent portals</li>
+                                <li><i class="fa fa-check-circle"></i> Mobile money integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal stagger-2">
+                    <div class="product-card">
+                        <div class="product-number">02</div>
+                        <img src="img/product-education.jpg" alt="UniPortal Education Management System">
+                        <div class="product-body">
+                            <h5>Education Management</h5>
+                            <p>Standalone system for academic and finance management focused on student success.</p>
+                            <ul class="product-features">
+                                <li><i class="fa fa-check-circle"></i> Student registration and grades</li>
+                                <li><i class="fa fa-check-circle"></i> Fee tracking and reports</li>
+                                <li><i class="fa fa-check-circle"></i> Enhanced parent/student portals</li>
+                                <li><i class="fa fa-check-circle"></i> Performance analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal stagger-3">
+                    <div class="product-card">
+                        <div class="product-number">03</div>
+                        <img src="img/product-payroll.jpg" alt="UniPortal Payroll - HR Management Software">
+                        <div class="product-body">
+                            <h5>UniPortal Payroll</h5>
+                            <p>Dedicated payroll tool for businesses and institutions needing compliant salary processing.</p>
+                            <ul class="product-features">
+                                <li><i class="fa fa-check-circle"></i> Automatic payslips & statutory files</li>
+                                <li><i class="fa fa-check-circle"></i> Leave management system</li>
+                                <li><i class="fa fa-check-circle"></i> WhatsApp self-service portal</li>
+                                <li><i class="fa fa-check-circle"></i> Multi-department support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-section section-light" id="features">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h1 class="mb-3">Powerful Features</h1>
+                <p class="section-subtitle mx-auto">Robust tools tailored for Zambian institutions, ensuring compliance, efficiency, and accessibility at every level.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 reveal stagger-1">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa fa-edit"></i></div>
+                        <h5>Student & Academic Management</h5>
+                        <p>Registration, scheduling, grades, attendance tracking, and automated report cards.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal stagger-2">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa fa-sync"></i></div>
+                        <h5>Statutory Compliance</h5>
+                        <p>Auto-generate NAPSA, NHIMA, and ZRA files with a single click for stress-free reporting.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal stagger-3">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa fa-laptop"></i></div>
+                        <h5>Portals & Access</h5>
+                        <p>Dedicated student, parent, and employee self-service portals with real-time updates.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal stagger-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa fa-draw-polygon"></i></div>
+                        <h5>Analytics & Reports</h5>
+                        <p>Performance insights, financial analytics, and custom reports for data-driven decisions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal stagger-5">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa fa-shield-alt"></i></div>
+                        <h5>Data Security</h5>
+                        <p>AES-256 encryption, daily backups, and role-based access for complete protection.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal stagger-6">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa fa-comments"></i></div>
+                        <h5>WhatsApp Integration</h5>
+                        <p>Automated notifications, payslip delivery, and parent communication via WhatsApp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-section section-dark">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="cta-banner reveal">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2>Ready to Transform Your Institution?</h2>
+                        <p>Join Zambian schools and businesses already using UniPortal to streamline operations and boost efficiency.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20would%20like%20to%20schedule%20a%20free%20demo%20for%20my%20institution." class="btn btn-dark btn-lg" target="_blank" style="background: white; color: var(--dark-text);">
+                            <i class="fab fa-whatsapp"></i> Schedule Free Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Process -->
+    <section class="py-section section-light">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 reveal-left">
+                    <div class="process-image">
+                        <img class="img-fluid" src="img/process-team.jpg" alt="UniPortal Implementation Team">
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-right">
+                    <h1 class="mb-4">Simple Steps to <span class="gradient-text">Get Started</span></h1>
+                    <p class="mb-4" style="color: var(--text-secondary);">Our implementation process ensures quick setup and comprehensive training for your team.</p>
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h5>System Configuration & Data Migration</h5>
+                            <p>We tailor UniPortal to your institution's structure and migrate all existing records seamlessly.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h5>Integration & Testing</h5>
+                            <p>Connect mobile money, WhatsApp notifications, and conduct thorough testing before launch.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h5>Training & Go-Live</h5>
+                            <p>Comprehensive tier-based training and launch with ongoing support for a smooth transition.</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary mt-3">Start Implementation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-section section-dark" id="pricing">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="text-center mb-5 pricing-header reveal">
+                <h1 class="mb-3">Flexible Pricing Plans</h1>
+                <p class="section-subtitle mx-auto mb-4">Choose from monthly, quarterly, semi-annual, or annual payments with up to 20% discounts. Prices in Zambian Kwacha (K).</p>
+                <div class="pricing-toggle-group">
+                    <button class="pricing-toggle active" data-plan="combo"><i class="fas fa-layer-group me-2"></i>Combo</button>
+                    <button class="pricing-toggle" data-plan="education"><i class="fas fa-book me-2"></i>Education</button>
+                    <button class="pricing-toggle" data-plan="payroll"><i class="fas fa-money-bill me-2"></i>Payroll</button>
+                </div>
+            </div>
+
+            <!-- Combo Pricing -->
+            <div class="pricing-section" id="pricing-combo">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 reveal stagger-1">
+                        <div class="price-card">
+                            <div class="card-header">
+                                <h4>Basic</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">999</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> Up to 30 employees</li>
+                                    <li><i class="fa fa-check"></i> Automatic salary calculations</li>
+                                    <li><i class="fa fa-check"></i> NAPSA/NHIMA/ZRA reports</li>
+                                    <li><i class="fa fa-check"></i> Core school management tools</li>
+                                    <li><i class="fa fa-times"></i> 24/7 call support</li>
+                                    <li><i class="fa fa-times"></i> Maintenance & upgrades</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Combo%20Basic%20plan." class="btn btn-dark" target="_blank">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 reveal stagger-2">
+                        <div class="price-card featured">
+                            <span class="price-badge">Most Popular</span>
+                            <div class="card-header" style="background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(59,130,246,0.1));">
+                                <h4>Standard</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">1,499</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> All Basic features</li>
+                                    <li><i class="fa fa-check"></i> Up to 100 employees</li>
+                                    <li><i class="fa fa-check"></i> Performance & attendance integration</li>
+                                    <li><i class="fa fa-check"></i> Smart payroll & analytics</li>
+                                    <li><i class="fa fa-check"></i> Dedicated support</li>
+                                    <li><i class="fa fa-times"></i> Multi-branch management</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Combo%20Standard%20plan." class="btn btn-primary" target="_blank">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 reveal stagger-3">
+                        <div class="price-card">
+                            <div class="card-header">
+                                <h4>Professional</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">2,499</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> All Standard features</li>
+                                    <li><i class="fa fa-check"></i> Unlimited employees</li>
+                                    <li><i class="fa fa-check"></i> Multi-branch management</li>
+                                    <li><i class="fa fa-check"></i> Full automation & cloud backups</li>
+                                    <li><i class="fa fa-check"></i> Priority 24/7 support</li>
+                                    <li><i class="fa fa-check"></i> Upgrades & maintenance</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Combo%20Professional%20plan." class="btn btn-dark" target="_blank">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Pricing -->
+            <div class="pricing-section" id="pricing-education" style="display: none;">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="price-card">
+                            <div class="card-header">
+                                <h4>Basic</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">499</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> Up to 200 students</li>
+                                    <li><i class="fa fa-check"></i> Student registration and grades</li>
+                                    <li><i class="fa fa-check"></i> Attendance tracking</li>
+                                    <li><i class="fa fa-check"></i> Fee tracking & reports</li>
+                                    <li><i class="fa fa-times"></i> 24/7 call support</li>
+                                    <li><i class="fa fa-times"></i> Maintenance & upgrades</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Education%20Basic%20plan." class="btn btn-dark" target="_blank">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="price-card featured">
+                            <span class="price-badge">Most Popular</span>
+                            <div class="card-header" style="background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(59,130,246,0.1));">
+                                <h4>Standard</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">799</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> All Basic features</li>
+                                    <li><i class="fa fa-check"></i> Up to 500 students</li>
+                                    <li><i class="fa fa-check"></i> Parent portal access</li>
+                                    <li><i class="fa fa-check"></i> Advanced analytics</li>
+                                    <li><i class="fa fa-check"></i> Dedicated support</li>
+                                    <li><i class="fa fa-times"></i> Multi-class management</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Education%20Standard%20plan." class="btn btn-primary" target="_blank">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="price-card">
+                            <div class="card-header">
+                                <h4>Professional</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">1,299</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> All Standard features</li>
+                                    <li><i class="fa fa-check"></i> Unlimited students</li>
+                                    <li><i class="fa fa-check"></i> Multi-class & multi-stream</li>
+                                    <li><i class="fa fa-check"></i> Full automation & cloud backups</li>
+                                    <li><i class="fa fa-check"></i> Priority 24/7 support</li>
+                                    <li><i class="fa fa-check"></i> Upgrades & maintenance</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Education%20Professional%20plan." class="btn btn-dark" target="_blank">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payroll Pricing -->
+            <div class="pricing-section" id="pricing-payroll" style="display: none;">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="price-card">
+                            <div class="card-header">
+                                <h4>Basic</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">299</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> Up to 30 employees</li>
+                                    <li><i class="fa fa-check"></i> Automatic payroll processing</li>
+                                    <li><i class="fa fa-check"></i> NAPSA/NHIMA/ZRA reports</li>
+                                    <li><i class="fa fa-check"></i> Payslip generation</li>
+                                    <li><i class="fa fa-times"></i> 24/7 call support</li>
+                                    <li><i class="fa fa-times"></i> Maintenance & upgrades</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Payroll%20Basic%20plan." class="btn btn-dark" target="_blank">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="price-card featured">
+                            <span class="price-badge">Most Popular</span>
+                            <div class="card-header" style="background: linear-gradient(135deg, rgba(16,185,129,0.1), rgba(59,130,246,0.1));">
+                                <h4>Standard</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">599</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> All Basic features</li>
+                                    <li><i class="fa fa-check"></i> Up to 100 employees</li>
+                                    <li><i class="fa fa-check"></i> Leave management</li>
+                                    <li><i class="fa fa-check"></i> WhatsApp self-service portal</li>
+                                    <li><i class="fa fa-check"></i> Dedicated support</li>
+                                    <li><i class="fa fa-times"></i> Multi-department management</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Payroll%20Standard%20plan." class="btn btn-primary" target="_blank">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="price-card">
+                            <div class="card-header">
+                                <h4>Professional</h4>
+                                <div class="price-display">
+                                    <span class="currency">K</span>
+                                    <span class="price-amount">999</span>
+                                    <span class="price-period">/ Month</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="feature-list">
+                                    <li><i class="fa fa-check"></i> All Standard features</li>
+                                    <li><i class="fa fa-check"></i> Unlimited employees</li>
+                                    <li><i class="fa fa-check"></i> Multi-department & multi-branch</li>
+                                    <li><i class="fa fa-check"></i> Full automation & cloud backups</li>
+                                    <li><i class="fa fa-check"></i> Priority 24/7 support</li>
+                                    <li><i class="fa fa-check"></i> Upgrades & maintenance</li>
+                                </ul>
+                                <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I'm%20interested%20in%20the%20Payroll%20Professional%20plan." class="btn btn-dark" target="_blank">Get Started</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Implementation Process End -->
+    </section>
 
-
-        <!-- Pricing Start -->
-        <div class="container-xxl py-6" id="pricing">
-            <div class="container">
-                <!-- Pricing Toggle -->
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-5">Flexible Pricing Plans</h1>
-                    
-                    <!-- Toggle Buttons -->
-                    <div class="d-flex justify-content-center gap-3 mb-5">
-                        <button class="btn btn-primary rounded-pill px-4 py-2 pricing-toggle active" data-plan="combo">
-                            <i class="fas fa-layer-group me-2"></i>Combo
-                        </button>
-                        <button class="btn btn-outline-primary rounded-pill px-4 py-2 pricing-toggle" data-plan="education">
-                            <i class="fas fa-book me-2"></i>Education
-                        </button>
-                        <button class="btn btn-outline-primary rounded-pill px-4 py-2 pricing-toggle" data-plan="payroll">
-                            <i class="fas fa-money-bill me-2"></i>Payroll
-                        </button>
-                    </div>
-                    
-                    <p class="mb-5">Choose from monthly, quarterly, semi-annual, or annual payments with up to 20% discounts. Prices in Zambian Kwacha (K).</p>
-                </div>
-
-                <!-- Combo Pricing -->
-                <div class="pricing-section" id="pricing-combo">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-dark p-4">
-                                <h4 class="text-white mt-2">Basic</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-primary mb-0"> 999</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-users me-2 text-primary"></i>Upto 30 members</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-calculator me-2 text-primary"></i>Automatic salary calculations</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-file-alt me-2 text-primary"></i>NAPSA/NHIMA/ZRA reports</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-school me-2 text-primary"></i>Core school management tools</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-phone me-2 text-muted"></i>24/7 call support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-tools me-2 text-muted"></i>Maintainance & Upgrades</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <!-- <div class="d-flex justify-content-between mb-3"><span>PHP & Ajax Contact Form</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-times text-danger pt-1"></i></div> -->
-                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-primary p-4">
-                                <h4 class="text-white mt-2">Standard</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-dark mb-0"> 1,499</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-check-circle me-2 text-primary"></i>All basic features</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-users me-2 text-primary"></i>Upto 100 employees performance & attendance integration</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-chart-line me-2 text-primary"></i>Smart payroll & advanced analytics</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-headset me-2 text-primary"></i>Dedicated support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-cogs me-2 text-primary"></i>Full Customisation</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-building me-2 text-muted"></i>Multi-branch or multi-department management</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <!-- <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-times text-danger pt-1"></i></div> -->
-                                <a href="" class="btn btn-primary rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-dark p-4">
-                                <h4 class="text-white mt-2">Professional</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-primary mb-0"> 2,499</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-check-circle me-2 text-primary"></i>All Standard features</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-users me-2 text-primary"></i>Unlimited employees</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-building me-2 text-primary"></i>Multi-branch or multi-department management</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-shield-alt me-2 text-primary"></i>Full automation & secure cloud backups</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-star me-2 text-primary"></i>Priority 24/7 customer support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span><i class="fa fa-rocket me-2 text-primary"></i>Upgrades & maintainace</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <!-- <div class="d-flex justify-content-between mb-3"><span>6 Months Free Support</span><i class="fa fa-check text-success pt-1"></i></div> -->
-                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Education Pricing -->
-                <div class="pricing-section hidden" id="pricing-education" style="display: none;">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-dark p-4">
-                                <h4 class="text-white mt-2">Basic</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-primary mb-0"> 499</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>Upto 200 students</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Student registration and grades</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Attendance tracking</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Fee tracking & reports</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>24/7 call support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Maintainance & Upgrades</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-primary p-4">
-                                <h4 class="text-white mt-2">Standard</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-dark mb-0"> 799</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>All basic features</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Upto 500 students</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Parent portal access</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Advanced analytics</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Dedicated support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Multi-class & multi-stream management</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <a href="" class="btn btn-primary rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-dark p-4">
-                                <h4 class="text-white mt-2">Professional</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-primary mb-0"> 1,299</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>All Standard features</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Unlimited students</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Multi-class & multi-stream management</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Full automation & secure cloud backups</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Priority 24/7 customer support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Upgrades & maintainace</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                <!-- Payroll Pricing -->
-                <div class="pricing-section hidden" id="pricing-payroll" style="display: none;">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-dark p-4">
-                                <h4 class="text-white mt-2">Basic</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-primary mb-0"> 299</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>Upto 30 employees</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Automatic payroll processing</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>NAPSA/NHIMA/ZRA reports</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Payslip generation</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>24/7 call support</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Maintainance & Upgrades</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-primary p-4">
-                                <h4 class="text-white mt-2">Standard</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-dark mb-0"> 599</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>All basic features</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Upto 100 employees</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Leave management</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>WhatsApp self-service portal</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Dedicated support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Multi-department management</span><i class="fa fa-times text-danger pt-1"></i></div>
-                                <a href="" class="btn btn-primary rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item rounded overflow-hidden">
-                            <div class="bg-dark p-4">
-                                <h4 class="text-white mt-2">Professional</h4>
-                                <div class="text-white">
-                                    <span class="align-top fs-4 fw-bold">K</span>
-                                    <h1 class="d-inline display-6 text-primary mb-0"> 999</h1>
-                                    <span class="align-baseline">/ Month</span>
-                                </div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex justify-content-between mb-3"><span>All Standard features</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Unlimited employees</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Multi-department & multi-branch management</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Full automation & secure cloud backups</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Priority 24/7 customer support</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <div class="d-flex justify-content-between mb-3"><span>Upgrades & maintainace</span><i class="fa fa-check text-success pt-1"></i></div>
-                                <a href="" class="btn btn-dark rounded-pill py-2 px-4 mt-3">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!-- Pricing End -->
-
-        <!-- CTA Section After Pricing -->
-        <div class="container-xxl py-6 bg-light">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-8 text-center text-lg-start">
+    <!-- CTA Strip -->
+    <section class="py-section section-light">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="cta-strip reveal">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
                         <h2 class="mb-3">Not Sure Which Plan is Right for You?</h2>
-                        <p class="mb-4">Our experts will help you choose the perfect solution for your institution's needs and budget.</p>
+                        <p style="color: var(--text-secondary); margin-bottom: 24px;">Our experts will help you choose the perfect solution for your institution's needs and budget.</p>
                         <div class="d-flex flex-wrap gap-3">
-                            <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20need%20help%20choosing%20the%20right%20plan%20for%20my%20institution." class="btn btn-primary btn-lg rounded-pill py-3 px-4" target="_blank">
+                            <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20need%20help%20choosing%20the%20right%20plan%20for%20my%20institution." class="btn btn-primary" target="_blank">
                                 <i class="fab fa-whatsapp me-2"></i>Get Personalized Quote
                             </a>
-                            <a href="#contact" class="btn btn-outline-primary btn-lg rounded-pill py-3 px-4">
+                            <a href="#contact" class="btn btn-outline-light">
                                 <i class="fa fa-envelope me-2"></i>Contact Sales Team
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center">
-                        <div class="bg-white rounded p-4 shadow">
-                            <i class="fa fa-4x fa-headset text-primary mb-3"></i>
-                            <h5>24/7 Support</h5>
-                            <p class="mb-0">Expert guidance available anytime</p>
+                    <div class="col-lg-5">
+                        <div class="support-card">
+                            <i class="fa fa-headset"></i>
+                            <h5 class="mt-3 mb-2">24/7 Expert Support</h5>
+                            <p style="color: var(--text-secondary); margin: 0; font-size: 0.9rem;">Get guidance from our dedicated support team anytime you need it.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- CTA Section End -->
+    </section>
 
-        <!-- Testimonial Start -->
-
-        <div class="container-xxl py-6" id="testimonial">
-            <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">What Our Clients Say</h1>
-                    <p class="mb-5">Hear from Zambian institutions using UniPortal to transform their operations.</p>
+    <!-- Testimonials -->
+    <section class="py-section section-dark" id="testimonial">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h1 class="mb-3">What Our Clients Say</h1>
+                <p class="section-subtitle mx-auto">Hear from Zambian institutions using UniPortal to transform their operations.</p>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"UniPortal has revolutionized our payroll process. NAPSA reports are now automated, saving us hours each month. The WhatsApp payslip feature is a game changer."</p>
+                    <div class="client-info">
+                        <img src="img/testimonial-1.jpg" alt="School Administrator in Lusaka">
+                        <div>
+                            <h6>School Administrator</h6>
+                            <span>Educational Institution, Lusaka</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>UniPortal has revolutionized our payroll process. NAPSA reports are now automated, saving us hours each month.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 65px; height: 65px;" alt="Client Testimonial">
-                            <div class="ps-4">
-                                <h5 class="mb-1">School Administrator, Lusaka</h5>
-                                <span>Educational Institution</span>
-                            </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"The student portal and mobile money integration have improved our fee collection by 40%. Parents love the convenience of paying via MTN and Airtel Money."</p>
+                    <div class="client-info">
+                        <img src="img/testimonial-2.jpg" alt="University Dean in Copperbelt">
+                        <div>
+                            <h6>University Dean</h6>
+                            <span>Higher Education, Copperbelt</span>
                         </div>
                     </div>
-                    <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>The student portal and mobile money integration have improved fee collection by 40%.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 65px; height: 65px;" alt="Client Testimonial">
-                            <div class="ps-4">
-                                <h5 class="mb-1">University Dean, Copperbelt</h5>
-                                <span>Higher Education</span>
-                            </div>
-                        </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                     </div>
-                    <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Excellent support and easy customization for our multi-branch setup.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 65px; height: 65px;" alt="Client Testimonial">
-                            <div class="ps-4">
-                                <h5 class="mb-1">HR Manager, Chilanga</h5>
-                                <span>Business</span>
-                            </div>
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Excellent support and easy customization for our multi-branch setup. The Pro plan with dedicated account management has been worth every kwacha."</p>
+                    <div class="client-info">
+                        <img src="img/testimonial-3.jpg" alt="HR Manager in Chilanga">
+                        <div>
+                            <h6>HR Manager</h6>
+                            <span>Business, Chilanga</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+    </section>
 
-
-        <!-- Resources & Blog Start -->
-        <div class="container-xxl py-6 bg-light" id="resources">
-            <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Resources & Insights</h1>
-                    <p class="mb-5">Stay informed with the latest trends in education management, compliance updates, and digital transformation strategies for Zambian institutions.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="blog-item bg-white rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/blog-1.jpg" alt="NAPSA Compliance Guide">
-                                <div class="bg-primary text-white position-absolute top-0 start-0 m-3 py-1 px-2">Compliance</div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex mb-3">
-                                    <small class="me-3"><i class="far fa-user text-primary me-2"></i>Admin</small>
-                                    <small><i class="far fa-calendar-alt text-primary me-2"></i>15 Jan 2026</small>
-                                </div>
-                                <h5 class="mb-3">NAPSA Compliance Made Simple: A Complete Guide for Zambian Schools</h5>
-                                <p>Learn how to automate NAPSA reporting and ensure your institution stays compliant with Zambia's pension regulations.</p>
-                                <a class="text-uppercase text-decoration-none" href="#contact">Read More <i class="bi bi-arrow-right"></i></a>
-                            </div>
+    <!-- Resources & Blog -->
+    <section class="py-section section-light" id="resources">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h1 class="mb-3">Resources & Insights</h1>
+                <p class="section-subtitle mx-auto">Stay informed with the latest in education management, compliance updates, and digital transformation for Zambian institutions.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 reveal stagger-1">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/blog-compliance.jpg" alt="NAPSA Compliance Guide">
+                            <span class="blog-tag">Compliance</span>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="blog-item bg-white rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/blog-2.jpg" alt="Digital Transformation">
-                                <div class="bg-primary text-white position-absolute top-0 start-0 m-3 py-1 px-2">Technology</div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-user"></i> Admin</span>
+                                <span><i class="far fa-calendar-alt"></i> 15 Jan 2026</span>
                             </div>
-                            <div class="p-4">
-                                <div class="d-flex mb-3">
-                                    <small class="me-3"><i class="far fa-user text-primary me-2"></i>Admin</small>
-                                    <small><i class="far fa-calendar-alt text-primary me-2"></i>12 Jan 2026</small>
-                                </div>
-                                <h5 class="mb-3">Digital Transformation in Zambian Education: What Schools Need to Know</h5>
-                                <p>Discover how cloud-based school management systems are revolutionizing education administration across Zambia.</p>
-                                <a class="text-uppercase text-decoration-none" href="#contact">Read More <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="blog-item bg-white rounded overflow-hidden">
-                            <div class="blog-img position-relative overflow-hidden">
-                                <img class="img-fluid" src="img/blog-3.jpg" alt="Mobile Money Integration">
-                                <div class="bg-primary text-white position-absolute top-0 start-0 m-3 py-1 px-2">Finance</div>
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex mb-3">
-                                    <small class="me-3"><i class="far fa-user text-primary me-2"></i>Admin</small>
-                                    <small><i class="far fa-calendar-alt text-primary me-2"></i>08 Jan 2026</small>
-                                </div>
-                                <h5 class="mb-3">Maximizing Fee Collection with Mobile Money Integration</h5>
-                                <p>How MTN, Airtel, and Zamtel integration can improve payment collection rates by up to 40% in Zambian schools.</p>
-                                <a class="text-uppercase text-decoration-none" href="#contact">Read More <i class="bi bi-arrow-right"></i></a>
-                            </div>
+                            <h5>NAPSA Compliance Made Simple for Zambian Schools</h5>
+                            <p>Learn how to automate NAPSA reporting and ensure your institution stays compliant with Zambia's pension regulations.</p>
+                            <a href="#contact" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-5">
-                    <a href="#contact" class="btn btn-primary py-3 px-5 rounded-pill">Subscribe for Updates</a>
+                <div class="col-lg-4 col-md-6 reveal stagger-2">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/blog-digital.jpg" alt="Digital Transformation in Education">
+                            <span class="blog-tag">Technology</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-user"></i> Admin</span>
+                                <span><i class="far fa-calendar-alt"></i> 12 Jan 2026</span>
+                            </div>
+                            <h5>Digital Transformation in Zambian Education</h5>
+                            <p>Discover how cloud-based management systems are revolutionizing education administration across Zambia.</p>
+                            <a href="#contact" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal stagger-3">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="img/blog-mobile.jpg" alt="Mobile Money Integration">
+                            <span class="blog-tag">Finance</span>
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-meta">
+                                <span><i class="far fa-user"></i> Admin</span>
+                                <span><i class="far fa-calendar-alt"></i> 08 Jan 2026</span>
+                            </div>
+                            <h5>Maximizing Fee Collection with Mobile Money</h5>
+                            <p>How MTN, Airtel, and Zamtel integration can improve payment collection rates by up to 40% in Zambian schools.</p>
+                            <a href="#contact" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Resources & Blog End -->
+    </section>
 
+    <!-- FAQ Section -->
+    <section class="py-section section-dark" id="faq">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h1 class="mb-3">Frequently Asked Questions</h1>
+                <p class="section-subtitle mx-auto">Find answers to common questions about UniPortal products, pricing, implementation, and support.</p>
+            </div>
 
-        <!-- FAQ Start -->
-        <div class="container-xxl py-6 bg-light" id="faq">
-            <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Frequently Asked Questions</h1>
-                    <p class="mb-5">Find answers to common questions about UniPortal products, pricing, implementation, and support.</p>
-                </div>
-
-                <!-- FAQ Search Bar -->
-                <div class="row mb-5">
-                    <div class="col-lg-8 mx-auto">
-                        <div class="input-group mb-4">
-                            <span class="input-group-text bg-white border-0"><i class="fa fa-search text-primary"></i></span>
-                            <input type="text" class="form-control border-0" id="faqSearch" placeholder="Search FAQs...">
-                        </div>
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control border-0" id="faqSearch" placeholder="Search FAQs...">
                     </div>
                 </div>
+            </div>
 
-                <!-- FAQ Category Filters -->
-                <div class="row mb-5">
-                    <div class="col-lg-12">
-                        <div class="d-flex justify-content-center gap-2 flex-wrap">
-                            <button class="btn btn-primary rounded-pill px-4 py-2 faq-filter active" data-category="all">
-                                All Questions
-                            </button>
-                            <button class="btn btn-outline-primary rounded-pill px-4 py-2 faq-filter" data-category="pricing">
-                                <i class="fas fa-tag me-2"></i>Pricing
-                            </button>
-                            <button class="btn btn-outline-primary rounded-pill px-4 py-2 faq-filter" data-category="implementation">
-                                <i class="fas fa-cogs me-2"></i>Implementation
-                            </button>
-                            <button class="btn btn-outline-primary rounded-pill px-4 py-2 faq-filter" data-category="security">
-                                <i class="fas fa-lock me-2"></i>Security
-                            </button>
-                            <button class="btn btn-outline-primary rounded-pill px-4 py-2 faq-filter" data-category="support">
-                                <i class="fas fa-headset me-2"></i>Support
-                            </button>
-                            <button class="btn btn-outline-primary rounded-pill px-4 py-2 faq-filter" data-category="features">
-                                <i class="fas fa-star me-2"></i>Features
-                            </button>
+            <div class="d-flex justify-content-center gap-2 flex-wrap mb-5">
+                <button class="faq-filter active" data-category="all">All</button>
+                <button class="faq-filter" data-category="pricing"><i class="fas fa-tag me-2"></i>Pricing</button>
+                <button class="faq-filter" data-category="implementation"><i class="fas fa-cogs me-2"></i>Implementation</button>
+                <button class="faq-filter" data-category="security"><i class="fas fa-lock me-2"></i>Security</button>
+                <button class="faq-filter" data-category="support"><i class="fas fa-headset me-2"></i>Support</button>
+                <button class="faq-filter" data-category="features"><i class="fas fa-star me-2"></i>Features</button>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div id="faqAccordion">
+                        <div class="faq-item" data-category="pricing">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    What's the difference between Basic, Standard, and Professional tiers?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    <strong>Basic</strong> is ideal for small institutions with up to 30-200 users. <strong>Standard</strong> offers advanced features like parent portals and dedicated support for 100-500 users. <strong>Professional</strong> includes unlimited users, multi-branch management, and priority 24/7 support. Choose based on your institution's size and needs.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- FAQ Items -->
-                <div class="row">
-                    <div class="col-lg-10 mx-auto">
-                        <div class="accordion" id="faqAccordion">
-                            <!-- Pricing FAQs -->
-                            <div class="accordion-item faq-item" data-category="pricing">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                        What's the difference between the Basic, Standard, and Professional tiers?
-                                    </button>
-                                </h2>
-                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Basic</strong> is ideal for small institutions with up to 30-200 users. <strong>Standard</strong> offers advanced features like parent portals and dedicated support for 100-500 users. <strong>Professional</strong> includes unlimited users, multi-branch management, and priority 24/7 support. Choose based on your institution's size and needs.
-                                    </div>
+                        <div class="faq-item" data-category="pricing">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    Do you offer annual discounts?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    Yes! We offer up to 20% discounts on quarterly, semi-annual, and annual payment plans. Quarterly payments receive 10%, semi-annual payments receive 15%, and annual payments receive 20% discount. Contact our sales team for a personalized quote.
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="accordion-item faq-item" data-category="pricing">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                        Do you offer annual discounts?
-                                    </button>
-                                </h2>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes! We offer up to 20% discounts on quarterly, semi-annual, and annual payment plans. Contact our sales team for a personalized quote based on your institution's needs.
-                                    </div>
+                        <div class="faq-item" data-category="pricing">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    Can I upgrade or downgrade my plan anytime?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    Absolutely! You can upgrade at any time with pro-rated charges. Downgrades take effect at your next renewal cycle. Contact support for assistance with plan changes.
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="accordion-item faq-item" data-category="pricing">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                        Can I upgrade or downgrade my plan anytime?
-                                    </button>
-                                </h2>
-                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect on your next billing cycle, and we'll adjust your charges accordingly. Contact support for assistance.
-                                    </div>
+                        <div class="faq-item" data-category="implementation">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    How long does it take to implement UniPortal?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    Implementation typically takes 2-4 weeks depending on your institution's size and complexity. This includes system configuration, data migration, staff training (2-4 days based on tier), and go-live support with a detailed timeline provided during onboarding.
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Implementation FAQs -->
-                            <div class="accordion-item faq-item" data-category="implementation">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                        How long does it take to implement UniPortal?
-                                    </button>
-                                </h2>
-                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Implementation typically takes 3-4 weeks depending on your institution's size and complexity. This includes system configuration, data migration, staff training, and go-live support. We provide a detailed timeline during the onboarding process.
-                                    </div>
+                        <div class="faq-item" data-category="implementation">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    Do you help migrate data from our current system?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    Yes, our implementation team handles complete data migration from your existing system. We ensure data accuracy and integrity throughout the process, working with you to minimize disruption to your operations.
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="accordion-item faq-item" data-category="implementation">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                        Do you help migrate data from our current system?
-                                    </button>
-                                </h2>
-                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes, our implementation team handles complete data migration from your existing system. We ensure data accuracy and integrity throughout the migration process. Our team works with you to minimize disruption to your operations.
-                                    </div>
+                        <div class="faq-item" data-category="security">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    How secure is UniPortal?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    UniPortal uses AES-256 encryption for all data at rest and in transit. We perform regular security audits, maintain industry-standard compliance, and store data on secure cloud servers with daily automatic backups and 99.5% uptime guarantee.
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="accordion-item faq-item" data-category="implementation">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                                        Is training provided for staff members?
-                                    </button>
-                                </h2>
-                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes! We provide comprehensive training for all staff members. This includes online training sessions, documentation, video tutorials, and ongoing support during and after go-live.
-                                    </div>
+                        <div class="faq-item" data-category="security">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    Is UniPortal GDPR compliant?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    Yes, UniPortal complies with international data protection standards including GDPR and local Zambian regulations. We implement strict data access controls and provide transparent data handling practices.
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Security FAQs -->
-                            <div class="accordion-item faq-item" data-category="security">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
-                                        How secure is UniPortal?
-                                    </button>
-                                </h2>
-                                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        UniPortal uses AES-256 encryption for all data at rest and in transit. We perform regular security audits, maintain industry-standard compliance, and store data on secure cloud servers with daily automatic backups. Your data is protected with enterprise-grade security.
-                                    </div>
+                        <div class="faq-item" data-category="support">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    What support is included with my plan?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    <strong>Basic & Standard:</strong> Email and phone support during business hours. <strong>Professional:</strong> 24/7 priority support with dedicated account manager. All plans include access to our knowledge base and video tutorials.
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="accordion-item faq-item" data-category="security">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
-                                        Where is my data stored?
-                                    </button>
-                                </h2>
-                                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        All data is stored on secure cloud servers with multiple redundancies. We maintain daily backups to ensure data protection and business continuity. Your institution retains full ownership and control of your data.
-                                    </div>
+                        <div class="faq-item" data-category="support">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    Is there a free trial available?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    Yes! We offer a 14-day free trial with full access to all features. No credit card required. After the trial, you can choose a plan that best fits your institution's needs and size.
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="accordion-item faq-item" data-category="security">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
-                                        Is UniPortal GDPR compliant?
-                                    </button>
-                                </h2>
-                                <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes, UniPortal complies with international data protection standards including GDPR and local Zambian regulations. We implement strict data access controls and provide transparent data handling practices.
-                                    </div>
+                        <div class="faq-item" data-category="features">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    Which payment methods does UniPortal support?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    UniPortal integrates with MTN Mobile Money, Airtel Money, Zamtel, and direct bank transfers. This allows students and staff to make payments via their preferred mobile money provider or bank account, ensuring maximum accessibility.
                                 </div>
                             </div>
+                        </div>
 
-                            <!-- Support FAQs -->
-                            <div class="accordion-item faq-item" data-category="support">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
-                                        What support is included with my plan?
-                                    </button>
-                                </h2>
-                                <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        <strong>Basic & Standard:</strong> Email and phone support during business hours. <strong>Professional:</strong> 24/7 priority support with dedicated account manager. All plans include access to our knowledge base and video tutorials.
-                                    </div>
+                        <div class="faq-item" data-category="features">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    Does UniPortal generate NAPSA and ZRA reports automatically?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    Yes! UniPortal automatically generates NAPSA, NHIMA, and ZRA compliance reports formatted according to Zambian statutory requirements. These can be exported with a single click, saving your HR team hours of manual work.
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="accordion-item faq-item" data-category="support">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
-                                        How quickly can I get technical support?
-                                    </button>
-                                </h2>
-                                <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        We aim to respond to support requests within 2 hours during business hours for Standard plans, and within 30 minutes for Professional plans. Critical issues receive immediate attention.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item faq-item" data-category="support">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12">
-                                        Is there a free trial available?
-                                    </button>
-                                </h2>
-                                <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes! We offer a 14-day free trial with full access to all features. No credit card required. After the trial, you can choose a plan that best fits your needs.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Features FAQs -->
-                            <div class="accordion-item faq-item" data-category="features">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq13">
-                                        Which payment methods does UniPortal support?
-                                    </button>
-                                </h2>
-                                <div id="faq13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        UniPortal integrates with MTN Mobile Money, Airtel Money, Zamtel, and direct bank transfers. This allows students and staff to make payments via their preferred mobile money or bank account.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item faq-item" data-category="features">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq14">
-                                        Can I customize UniPortal to match my institution's needs?
-                                    </button>
-                                </h2>
-                                <div id="faq14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes! We offer full customization for Standard and Professional plans. This includes custom reports, branding, workflows, and integrations with your existing systems. Contact our team to discuss your requirements.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item faq-item" data-category="features">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq15">
-                                        Does UniPortal generate NAPSA and ZRA reports automatically?
-                                    </button>
-                                </h2>
-                                <div id="faq15" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes! UniPortal automatically generates NAPSA, NHIMA, and ZRA compliance reports. These are formatted according to Zambian statutory requirements and can be exported with a single click, saving your HR team hours of manual work.
-                                    </div>
+                        <div class="faq-item" data-category="features">
+                            <div class="accordion-item-custom">
+                                <button class="accordion-button-custom" onclick="toggleFaq(this)">
+                                    Can I customize UniPortal for my institution?
+                                    <span class="toggle-icon"><i class="fa fa-plus"></i></span>
+                                </button>
+                                <div class="accordion-body-custom">
+                                    Yes! Standard and Professional plans offer full customization including custom reports, branding, workflows, and integrations with your existing systems. Contact our team to discuss your specific requirements.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- FAQ CTA -->
-                <div class="row mt-5">
-                    <div class="col-lg-8 mx-auto text-center">
-                        <p class="mb-3">Didn't find your answer?</p>
-                        <a href="#contact" class="btn btn-primary rounded-pill py-3 px-5">
-                            <i class="fa fa-envelope me-2"></i>Contact Our Support Team
+            <div class="text-center mt-5 reveal">
+                <p style="color: var(--text-secondary);">Didn't find your answer?</p>
+                <a href="#contact" class="btn btn-primary mt-3">
+                    <i class="fa fa-envelope me-2"></i>Contact Our Support Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Partners -->
+    <section class="py-section section-light" id="partners">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="text-center mb-5 reveal">
+                <h1 class="mb-3">Integration Partners</h1>
+                <p class="section-subtitle mx-auto">UniPortal seamlessly integrates with leading Zambian payment systems and business tools.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 reveal stagger-1">
+                    <div class="partner-card">
+                        <div class="partner-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h5>MTN Mobile Money</h5>
+                        <p>Secure mobile payments for fees and salaries across Zambia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal stagger-2">
+                    <div class="partner-card">
+                        <div class="partner-icon"><i class="fas fa-mobile"></i></div>
+                        <h5>Airtel Money</h5>
+                        <p>Instant payment processing with Airtel's extensive network.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal stagger-3">
+                    <div class="partner-card">
+                        <div class="partner-icon"><i class="fas fa-wifi"></i></div>
+                        <h5>Zamtel</h5>
+                        <p>Reliable connectivity and payment solutions nationwide.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal stagger-4">
+                    <div class="partner-card">
+                        <div class="partner-icon"><i class="fas fa-university"></i></div>
+                        <h5>Bank Integrations</h5>
+                        <p>Direct bank transfers and card payments for comprehensive finance.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal stagger-5">
+                    <div class="partner-card">
+                        <div class="partner-icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+                        <h5>WhatsApp Business</h5>
+                        <p>Automated notifications and payslip delivery via WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal stagger-6">
+                    <div class="partner-card">
+                        <div class="partner-icon"><i class="fas fa-envelope"></i></div>
+                        <h5>Email Systems</h5>
+                        <p>SMTP integration for automated reports and notifications.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal stagger-1">
+                    <div class="partner-card">
+                        <div class="partner-icon"><i class="fas fa-cloud"></i></div>
+                        <h5>Cloud Storage</h5>
+                        <p>Secure backups with Google Drive and OneDrive integration.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal stagger-2">
+                    <div class="partner-card">
+                        <div class="partner-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h5>Analytics Tools</h5>
+                        <p>Advanced reporting and dashboard integrations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-section section-dark" id="contact">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="row g-5">
+                <div class="col-lg-6 reveal-left">
+                    <h1 class="mb-3">Get In Touch</h1>
+                    <p>Contact us for a free demo or inquiries. We're here to help your institution thrive.</p>
+
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i class="fa fa-phone-alt"></i></div>
+                        <div>
+                            <h6>Call Us</h6>
+                            <h5>+260 973 981 779</h5>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i class="fa fa-envelope"></i></div>
+                        <div>
+                            <h6>Email Us</h6>
+                            <h5>uniportal.hq@gmail.com</h5>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="info-icon"><i class="fa fa-map-marker-alt"></i></div>
+                        <div>
+                            <h6>Our Office</h6>
+                            <h5>Lusaka, Zambia</h5>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px;">Prefer a quick chat?</p>
+                        <a href="https://wa.me/260973981779?text=Hi%20UniPortal,%20I%20would%20like%20to%20know%20more%20about%20your%20products." class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>Chat on WhatsApp
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- FAQ End -->
-
-
-        <!-- Integration Partners Start -->
-        <div class="container-xxl py-6" id="partners">
-            <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Integration Partners</h1>
-                    <p class="mb-5">UniPortal seamlessly integrates with leading Zambian payment systems and business tools to provide a complete solution.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="partner-item bg-light rounded text-center p-4">
-                            <i class="fa fa-4x fa-mobile-alt text-primary mb-3"></i>
-                            <h5 class="mb-3">MTN Mobile Money</h5>
-                            <p class="m-0">Secure mobile payments for fees and salaries across Zambia.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="partner-item bg-light rounded text-center p-4">
-                            <i class="fa fa-4x fa-mobile text-primary mb-3"></i>
-                            <h5 class="mb-3">Airtel Money</h5>
-                            <p class="m-0">Instant payment processing with Airtel's extensive network coverage.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="partner-item bg-light rounded text-center p-4">
-                            <i class="fa fa-4x fa-wifi text-primary mb-3"></i>
-                            <h5 class="mb-3">Zamtel</h5>
-                            <p class="m-0">Reliable connectivity and payment solutions for rural and urban areas.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="partner-item bg-light rounded text-center p-4">
-                            <i class="fa fa-4x fa-university text-primary mb-3"></i>
-                            <h5 class="mb-3">Bank Integrations</h5>
-                            <p class="m-0">Direct bank transfers and card payments for comprehensive financial management.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 mt-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="partner-item bg-light rounded text-center p-4">
-                            <i class="fa fa-4x fa-whatsapp text-success mb-3"></i>
-                            <h5 class="mb-3">WhatsApp Business</h5>
-                            <p class="m-0">Automated notifications and payslip delivery via WhatsApp.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="partner-item bg-light rounded text-center p-4">
-                            <i class="fa fa-4x fa-envelope text-primary mb-3"></i>
-                            <h5 class="mb-3">Email Systems</h5>
-                            <p class="m-0">SMTP integration for automated reports and notifications.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="partner-item bg-light rounded text-center p-4">
-                            <i class="fa fa-4x fa-cloud text-primary mb-3"></i>
-                            <h5 class="mb-3">Cloud Storage</h5>
-                            <p class="m-0">Secure backups with Google Drive and OneDrive integration.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="partner-item bg-light rounded text-center p-4">
-                            <i class="fa fa-4x fa-chart-bar text-primary mb-3"></i>
-                            <h5 class="mb-3">Analytics Tools</h5>
-                            <p class="m-0">Advanced reporting and dashboard integrations.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Integration Partners End -->
-
-
-        <!-- Contact Start -->
-        <div class="container-xxl py-6" id="contact">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-3">Get In Touch</h1>
-                        <p class="mb-4">Contact us for a free demo or inquiries. We're here to help your institution thrive.</p>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-phone-alt"></i>
-                            </div>
-                            <div class="ms-3">
-                                <p class="mb-2">Call Us</p>
-                                <h5 class="mb-0">+260973981779</h5>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-4">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <div class="ms-3">
-                                <p class="mb-2">Mail Us</p>
-                                <h5 class="mb-0">uniportal.hq@gmail.com</h5>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-0">
-                            <div class="flex-shrink-0 btn-square rounded-circle bg-primary text-white">
-                                <i class="fa fa-map-marker-alt"></i>
-                            </div>
-                            <div class="ms-3">
-                                <p class="mb-2">Our Office</p>
-                                <h5 class="mb-0">Lusaka, Zambia</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-6 reveal-right">
+                    <div class="contact-form">
                         <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
+                                        <label for="name" style="color: var(--text-muted);">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-                                        <label for="email">Your Email</label>
+                                        <label for="email" style="color: var(--text-muted);">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                                        <label for="subject">Subject</label>
+                                        <label for="subject" style="color: var(--text-muted);">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px" required></textarea>
-                                        <label for="message">Message</label>
+                                        <textarea class="form-control" placeholder="Your message" id="message" name="message" style="height: 140px" required></textarea>
+                                        <label for="message" style="color: var(--text-muted);">Your Message</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit" id="submitBtn">
+                                    <button class="btn btn-primary w-100" type="submit" id="submitBtn" style="justify-content: center;">
                                         <span id="btnText">Send Message</span>
                                         <span id="btnSpinner" style="display: none;">
-                                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                                            Sending...
+                                            <span class="spinner-border spinner-border-sm" role="status"></span> Sending...
                                         </span>
                                     </button>
                                 </div>
@@ -1115,80 +1106,81 @@
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
-        
+    </section>
 
-        <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-body footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Lusaka, Zambia</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+260973981779</p>
-                        <p><i class="fa fa-envelope me-3"></i>uniportal.hq@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container-xxl px-4 px-lg-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-col">
+                        <div class="d-flex align-items-center gap-2 mb-4">
+                            <div class="brand-icon" style="width: 32px; height: 32px; border-radius: 8px; background: var(--gradient); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 0.8rem;">U</div>
+                            <span style="font-weight: 800; font-size: 1.2rem; color: var(--text-primary);">UniPortal</span>
+                        </div>
+                        <p>Smart school management and payroll automation for Zambian educational institutions.</p>
+                        <div class="social-links mt-4">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Quick Links<span></span></p>
-                        <a class="btn btn-link" href="#about">About</a>
-                        <a class="btn btn-link" href="#products">Products</a>
-                        <a class="btn btn-link" href="#pricing">Pricing</a>
-                        <a class="btn btn-link" href="#partners">Partners</a>
-                        <a class="btn btn-link" href="#resources">Resources</a>
-                        <a class="btn btn-link" href="#contact">Contact</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-col">
+                        <h5>Quick Links</h5>
+                        <a href="#about" class="footer-link">About Us</a>
+                        <a href="#products" class="footer-link">Products</a>
+                        <a href="#pricing" class="footer-link">Pricing</a>
+                        <a href="#partners" class="footer-link">Partners</a>
+                        <a href="#resources" class="footer-link">Resources</a>
+                        <a href="#contact" class="footer-link">Contact</a>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Resources<span></span></p>
-                        <a class="btn btn-link" href="">Blog</a>
-                        <a class="btn btn-link" href="">Case Studies</a>
-                        <a class="btn btn-link" href="">FAQs</a>
-                        <a class="btn btn-link" href="">Partners</a>
-                        <a class="btn btn-link" href="">Careers</a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-col">
+                        <h5>Resources</h5>
+                        <a href="#resources" class="footer-link">Blog</a>
+                        <a href="#faq" class="footer-link">FAQs</a>
+                        <a href="#" class="footer-link">Case Studies</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
                     </div>
-                    <div class="col-md-6 col-lg-3">
-                        <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-col">
+                        <h5>Newsletter</h5>
                         <p>Stay updated on UniPortal features and Zambian education trends.</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                        <div class="newsletter-input">
+                            <input type="email" placeholder="Your email address">
+                            <button type="button"><i class="fa fa-paper-plane"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="https://uniportal.dpdns.org">UniPortal</a>, All Rights Reserved. 
-                            
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="#home">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FAQs</a>
-                            </div>
-                        </div>
+
+            <div class="footer-copyright">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <p>&copy; <a href="https://uniportal.dpdns.org">UniPortal</a>, All Rights Reserved.</p>
+                    <div class="footer-menu-links">
+                        <a href="#home">Home</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Help</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </footer>
 
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fa fa-arrow-up"></i>
+    </a>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -1196,9 +1188,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
 </html>
-</DOCUMENT>
