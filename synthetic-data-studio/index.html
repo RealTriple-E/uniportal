@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505">
+<title>Synthetic Data Studio — Simulation Laboratory — UniPortal</title>
+<meta name="description" content="Synthetic Data Studio: a separate subsystem generating seeded, versioned synthetic worlds for safe demonstration and testing.">
+<link rel="canonical" href="https://uniportal.dpdns.org/synthetic-data-studio/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="UniPortal">
+<meta property="og:title" content="Synthetic Data Studio — Simulation Laboratory">
+<meta property="og:description" content="Seeded, reproducible synthetic worlds with manifest and licence metadata — never mixed with live data.">
+<meta property="og:url" content="https://uniportal.dpdns.org/synthetic-data-studio/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Synthetic Data Studio — Simulation Laboratory">
+<meta name="twitter:description" content="Seeded, reproducible synthetic worlds with manifest and licence metadata — never mixed with live data.">
+<link rel="icon" href="/assets/img/uniportal-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"UniPortal","url":"https://uniportal.dpdns.org/","email":"uniportal.hq@gmail.com","telephone":"+260973981779","address":{"@type":"PostalAddress","addressLocality":"Lusaka","addressCountry":"ZM"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav-bar">
+    <a class="brand" href="/" aria-label="UniPortal home">
+      <img src="/assets/img/uniportal-mark.png" alt="" width="233" height="244">
+      <span>UniPortal</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="/platform/">Platform</a></li>
+        <li class="nav-item">
+          <button class="nav-link" aria-expanded="false" aria-haspopup="true">Products <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+          <div class="dropdown" role="menu">
+            <div class="drop-label">Education</div>
+            <a href="/solutions/education/" role="menuitem"><strong>UniPortal Education</strong><span>Schools, colleges &amp; universities</span></a>
+            <a href="/products/education/university-management/" role="menuitem"><strong>University / College Management</strong><span>Students, academics, payments, analytics</span></a>
+            <a href="/products/education/school-management/" role="menuitem"><strong>School Management</strong><span>Enrolment, fees, results, communication</span></a>
+            <div class="drop-label">Institutional Technology</div>
+            <a href="/products/hr-payroll/" role="menuitem"><strong>HR &amp; Payroll</strong><span>Staff, payslips, NAPSA / NHIMA / ZRA</span></a>
+            <a href="/products/institutional-suite/" role="menuitem"><strong>Institutional Combo</strong><span>University management + HR &amp; payroll</span></a>
+            <div class="drop-label">Business</div>
+            <a href="/products/kora/" role="menuitem"><strong>Kora</strong><span>POS, inventory &amp; business operations</span></a>
+            <div class="drop-label">AI &amp; Automation</div>
+            <a href="/products/uniportal-ai/" role="menuitem"><strong>UniPortal AI</strong><span>Assistants over your organisation's data</span></a>
+            <a href="/products/automation/" role="menuitem"><strong>Workflow Automation</strong><span>Approved work, executed with control</span></a>
+            <div class="drop-label">Intelligence</div>
+            <a href="/athena/" role="menuitem"><strong>Athena by UniPortal</strong><span>Intelligence operating architecture</span></a>
+            <a href="/atlas/" role="menuitem"><strong>Atlas by Athena</strong><span>Command, fusion, response, strategic</span></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" aria-expanded="false" aria-haspopup="true">Solutions <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="/solutions/education/" role="menuitem"><strong>Education</strong><span>Schools, colleges, universities</span></a>
+            <a href="/solutions/business-ai/" role="menuitem"><strong>Business AI</strong><span>SME intelligence and automation</span></a>
+            <a href="/solutions/hospitality/" role="menuitem"><strong>Hospitality</strong><span>Bookings, occupancy, revenue, staff</span></a>
+            <a href="/solutions/retail/" role="menuitem"><strong>Retail</strong><span>POS, inventory, customers</span></a>
+            <a href="/solutions/ngos/" role="menuitem"><strong>NGOs</strong><span>Projects, budgets, reporting</span></a>
+            <a href="/solutions/public-institutions/" role="menuitem"><strong>Public Institutions</strong><span>Governed operational pictures</span></a>
+            <a href="/solutions/enterprise/" role="menuitem"><strong>Enterprise</strong><span>Custom integrations and deployment</span></a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" aria-expanded="false" aria-haspopup="true">Intelligence <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="/athena/" role="menuitem"><strong>Athena</strong><span>The intelligence architecture</span></a>
+            <a href="/atlas/" role="menuitem"><strong>Atlas</strong><span>The operational product</span></a>
+            <a href="/synthetic-data-studio/" role="menuitem" aria-current="page"><strong>Synthetic Data Studio</strong><span>Simulation and scenario laboratory</span></a>
+            <a href="/atlas-trainer/" role="menuitem"><strong>Atlas Trainer</strong><span>Training without live data</span></a>
+          </div>
+        </li>
+        <li><a class="nav-link" href="/services/">Services</a></li>
+        <li><a class="nav-link" href="/resources/">Resources</a></li>
+        <li><a class="nav-link" href="/company/">Company</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="/request-demo/">Request a Demo</a>
+      <button class="nav-toggle" data-drawer-open aria-expanded="false" aria-label="Open menu"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" fill="none" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" data-drawer role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <span class="micro">UniPortal — Menu</span>
+      <button class="drawer-close" data-drawer-close aria-label="Close menu"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" fill="none" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+    </div>
+    <nav aria-label="Mobile">
+      <a class="d-link" href="/platform/">Platform</a>
+      <details><summary>Products <span aria-hidden="true">+</span></summary>
+        <a href="/solutions/education/">UniPortal Education</a>
+        <a href="/products/education/university-management/">University / College Management</a>
+        <a href="/products/education/school-management/">School Management</a>
+        <a href="/products/hr-payroll/">HR &amp; Payroll</a>
+        <a href="/products/institutional-suite/">Institutional Combo</a>
+        <a href="/products/kora/">Kora</a>
+        <a href="/products/uniportal-ai/">UniPortal AI</a>
+        <a href="/products/automation/">Workflow Automation</a>
+        <a href="/athena/">Athena</a><a href="/atlas/">Atlas</a>
+      </details>
+      <details><summary>Solutions <span aria-hidden="true">+</span></summary>
+        <a href="/solutions/education/">Education</a><a href="/solutions/business-ai/">Business AI</a>
+        <a href="/solutions/hospitality/">Hospitality</a><a href="/solutions/retail/">Retail</a>
+        <a href="/solutions/ngos/">NGOs</a><a href="/solutions/public-institutions/">Public Institutions</a>
+        <a href="/solutions/enterprise/">Enterprise</a>
+      </details>
+      <details><summary>Intelligence <span aria-hidden="true">+</span></summary>
+        <a href="/athena/">Athena</a><a href="/atlas/">Atlas</a>
+        <a href="/synthetic-data-studio/">Synthetic Data Studio</a><a href="/atlas-trainer/">Atlas Trainer</a>
+      </details>
+      <a class="d-link" href="/services/">Services</a>
+      <a class="d-link" href="/resources/">Resources</a>
+      <a class="d-link" href="/company/">Company</a>
+      <a class="btn btn-primary" href="/request-demo/">Request a Demo</a>
+    </nav>
+  </div>
+</div>
+
+<main id="main">
+<!-- ============ 01 HERO + PIPELINE ============ -->
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Synthetic Data Studio — Separate subsystem</p>
+      <h1 class="display" id="hero-h">A laboratory for safe, synthetic worlds.</h1>
+      <p class="lead">Studio generates seeded, reproducible synthetic worlds for demonstration and testing — clearly separated from live data. <span class="tag demo">Synthetic data</span></p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/request-demo/">Talk to UniPortal</a>
+        <a class="btn btn-ghost" href="/atlas/">See Atlas</a>
+      </div>
+      <div class="hero-facts" aria-label="Studio facts">
+        <span>Seeded &amp; versioned</span><span>Validated worlds</span><span>Licenced metadata</span>
+      </div>
+    </div>
+    <div class="panel reveal" role="img" aria-label="World pipeline: generate, validate, version, publish, then the Atlas integration boundary.">
+      <div class="panel-head"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="micro">World pipeline</span>&nbsp;<span class="tag demo">Synthetic data</span></div>
+      <div class="panel-body">
+        <p class="sol-flow">GENERATE → VALIDATE → VERSION → PUBLISH DATA WORLD<br><b>↓ ATLAS INTEGRATION BOUNDARY ↓</b><br>Athena Intelligence State (synthetic partition)</p>
+        <p class="caption">Every world carries its seed, configuration, version, manifest and licence metadata.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 REPRODUCIBILITY ============ -->
+<section class="section section-alt" aria-labelledby="repro-h">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <p class="eyebrow">Reproducibility</p>
+      <h2 id="repro-h">Same seed, same world.</h2>
+      <p class="lead">Seed plus configuration plus version produces an identical world — so demonstrations and tests are repeatable.</p>
+      <ul class="k-list">
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5l4 4 10-11" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Deterministic seeds.</strong> A published seed always regenerates the same entities, events and relationships.</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5l4 4 10-11" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Date and geography selection.</strong> Authors choose the time window and the Zambian geography a scenario covers.</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5l4 4 10-11" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>Versioned worlds.</strong> Changes publish as new versions; earlier versions stay available for comparison.</span></li>
+      </ul>
+    </div>
+    <div class="panel reveal">
+      <div class="panel-head"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="micro">Reproducibility contract — mock</span>&nbsp;<span class="tag demo">Synthetic data</span></div>
+      <div class="panel-body">
+        <p class="sol-flow">SEED <span class="num">41702</span> + CONFIG <span class="num">v3</span> + WORLD <span class="num">2.1.0</span><br><b>= IDENTICAL WORLD, EVERY RUN</b><br>Window: 14 days · Geography: Lusaka district · Events: synthetic</p>
+        <p class="caption">A mock illustration. Real seeds and versions are assigned at publication time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 SCENARIOS + VALIDATION ============ -->
+<section class="section" aria-labelledby="scen-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Scenarios</p>
+      <h2 id="scen-h">From normal conditions to incident — then response.</h2>
+      <p class="lead">Scenario authors script coherent storylines; validation checks every world before it publishes.</p>
+    </div>
+    <div class="reveal" data-tabs>
+      <div class="tabs" role="tablist" aria-label="Scenario stages">
+        <button role="tab" aria-selected="true" aria-controls="scen-p1" id="scen-t1">Generate</button>
+        <button role="tab" aria-selected="false" aria-controls="scen-p2" id="scen-t2" tabindex="-1">Validate</button>
+        <button role="tab" aria-selected="false" aria-controls="scen-p3" id="scen-t3" tabindex="-1">Publish</button>
+      </div>
+      <div id="scen-p1" data-tab-panel role="tabpanel" aria-labelledby="scen-t1">
+        <p class="sol-flow">NORMAL CONDITIONS → WEATHER CHANGE → TRAFFIC EFFECT → ACTIVITY CONCENTRATION → INCIDENT → RELATED EVENTS → RESPONSE</p>
+        <p>Authors define entities, relationships, timestamps and geography for each beat of the storyline — all synthetic, all labelled.</p>
+      </div>
+      <div id="scen-p2" data-tab-panel role="tabpanel" aria-labelledby="scen-t2" hidden>
+        <p class="sol-flow">SCHEMA → TYPES → TIMESTAMPS → GEOGRAPHY → LICENCE → DUPLICATION → INTEGRITY</p>
+        <p>Validation confirms structure, coherence and labelling before anything publishes. Failed checks return the world to draft with reasons attached.</p>
+      </div>
+      <div id="scen-p3" data-tab-panel role="tabpanel" aria-labelledby="scen-t3" hidden>
+        <p class="sol-flow">VERSION → MANIFEST → LICENCE → PUBLISH → ATLAS BOUNDARY</p>
+        <p>Published worlds cross into Atlas only through the integration boundary — into a synthetic partition, never into live partitions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 MANIFEST + SEPARATION ============ -->
+<section class="section section-alt" aria-labelledby="man-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Manifest &amp; separation</p>
+      <h2 id="man-h">Every world declares itself.</h2>
+      <p class="lead">Manifest and licence metadata travel with the world — and synthetic material stays visibly separate.</p>
+    </div>
+    <div class="grid-2">
+      <div class="table-scroll reveal">
+        <table class="compare">
+          <caption>Manifest and licence fields</caption>
+          <thead><tr><th scope="col">Field</th><th scope="col">What it records</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Seed &amp; version</th><td>Deterministic regeneration reference</td></tr>
+            <tr><th scope="row">Generation method</th><td>How entities and events were produced</td></tr>
+            <tr><th scope="row">Geography &amp; window</th><td>Coverage area and time range</td></tr>
+            <tr><th scope="row">Licence &amp; terms</th><td>Permitted use, attribution, retention</td></tr>
+            <tr><th scope="row">Synthetic label</th><td class="hl">Every record marked synthetic-only</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel reveal">
+        <div class="panel-head"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="micro">Separation badges</span></div>
+        <div class="panel-body">
+          <div class="flow-stack">
+            <div class="flow-row"><span class="chip">Public context</span><span class="chip out">Synthetic events</span></div>
+            <div class="flow-arrow" aria-hidden="true">↓</div>
+            <div class="flow-row"><span class="chip out">Synthetic entities</span><span class="chip out">Synthetic cases</span></div>
+          </div>
+          <p class="caption"><span class="tag demo">Synthetic data</span> Synthetic and public material is badged wherever it appears. A demonstration audience can never mistake it for live operational data.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 CTA ============ -->
+<section class="section cta-band" aria-labelledby="cta-h">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center">Get started</p>
+    <h2 id="cta-h" class="reveal">Discuss a scenario for your organisation.</h2>
+    <p class="lead reveal" style="margin:0 auto">Tell us the storyline you need to rehearse or demonstrate. We will scope the world, the window and the geography.</p>
+    <div class="btn-row reveal" style="justify-content:center">
+      <a class="btn btn-primary" href="/request-demo/">Talk to UniPortal</a>
+      <a class="btn btn-ghost" href="/atlas-trainer/">See Atlas Trainer</a>
+    </div>
+    <p class="caption reveal" style="text-align:center;margin-left:auto;margin-right:auto">Prefer to talk now? <a href="tel:+260973981779">+260 973 981 779</a> · <a href="mailto:uniportal.hq@gmail.com">uniportal.hq@gmail.com</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="UniPortal home">
+      <img src="/assets/img/uniportal-mark.png" alt="" width="233" height="244">
+      <span>UniPortal</span>
+    </a>
+        <p>Connected systems for institutional management, AI-powered operations and organisational intelligence.</p>
+        <p class="micro">Lusaka · Zambia</p>
+      </div>
+      <div class="foot-col"><h4>Platform</h4><ul><li><a href="/platform/">Overview</a></li><li><a href="/architecture/">Architecture</a></li><li><a href="/security/">Security</a></li><li><a href="/services/">Services</a></li><li><a href="/pricing/">Pricing</a></li></ul></div>
+      <div class="foot-col"><h4>Products</h4><ul><li><a href="/products/education/university-management/">University Management</a></li><li><a href="/products/hr-payroll/">HR &amp; Payroll</a></li><li><a href="/products/institutional-suite/">Combo</a></li><li><a href="/products/uniportal-ai/">UniPortal AI</a></li><li><a href="/products/automation/">Automation</a></li><li><a href="/products/kora/">Kora</a></li></ul></div>
+      <div class="foot-col"><h4>Intelligence</h4><ul><li><a href="/athena/">Athena</a></li><li><a href="/atlas/">Atlas</a></li><li><a href="/synthetic-data-studio/">Synthetic Data Studio</a></li><li><a href="/atlas-trainer/">Atlas Trainer</a></li></ul></div>
+      <div class="foot-col"><h4>Company</h4><ul><li><a href="/company/">About</a></li><li><a href="/resources/">Resources</a></li><li><a href="/request-demo/">Request a Demo</a></li><li><a href="/contact/">Contact</a></li><li><a href="tel:+260973981779">+260 973 981 779</a></li><li><a href="mailto:uniportal.hq@gmail.com">uniportal.hq@gmail.com</a></li></ul></div>
+    </div>
+    <div class="foot-base"><span>© <span data-year>2026</span> UniPortal. All rights reserved.</span><span>Manage → Connect → Understand → Automate → Decide</span></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
